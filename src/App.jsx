@@ -4,10 +4,16 @@ import { createClient } from "@supabase/supabase-js";
 import React, { useState, useEffect } from "react";
 
 
-const supabase = createClient(
-  import.meta.env.VITE_SUPABASE_URL,
-  import.meta.env.VITE_SUPABASE_ANON_KEY
-);
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
+
+if (!supabaseUrl || !supabaseAnonKey) {
+  console.warn(
+    "Supabase credentials are missing. Set VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY."
+  );
+}
+
+const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 export default function App() {
   useEffect(() => {
