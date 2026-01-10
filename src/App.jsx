@@ -130,7 +130,7 @@ FOCUSED ACTION,<br /> DRIVING CONSISTENCY
               disabled={!name || !action || loading}
               onClick={async () => {
                 setLoading(true);
-                await supabase.from("kickoff_commitments").insert([
+                await supabase.from("kickoff_commitments_fiber").insert([
                   { name, action, year: 2026 },
                 ]);
                 setLoading(false);
