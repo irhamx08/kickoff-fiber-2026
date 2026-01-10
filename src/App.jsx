@@ -83,7 +83,12 @@ export default function App() {
         >
           <div className="w-full h-full max-w-md bg-white shadow-lg p-5 text-center flex flex-col justify-center">
             <h1 className="font-bold text-sm mb-4">KICK OFF MEETING FIBER 2026</h1>
+<img src="/logo.jpeg" alt="logo" className="mx-auto mb-4 w-24" />
 
+
+<p className="text-xs font-semibold mb-4">
+FOCUSED ACTION,<br /> DRIVING CONSISTENCY
+</p>
             <label className="block text-sm mb-1">Enter your name:</label>
             <input
               className="w-full text-center border rounded-lg px-3 py-2 mb-4"
