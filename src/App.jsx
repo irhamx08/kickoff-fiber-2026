@@ -1,4 +1,5 @@
 
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { createClient } from "@supabase/supabase-js";
 import React, { useState, useEffect } from "react";
@@ -65,7 +66,7 @@ export default function App() {
         >
           <div className="w-full h-full max-w-md bg-white shadow-lg p-6 text-center flex flex-col justify-center">
             <h2 className="text-xl font-semibold mb-6">Thank You for Your Commitment</h2>
-            <img src="/logo.png" alt="logo" className="mx-auto mb-4 w-32" />
+            <img src="/logo.jpeg" alt="logo" className="mx-auto mb-4 w-32" />
             <p className="text-sm text-gray-600 font-medium">
               FOCUSED ACTION,<br /> DRIVING CONSISTENCY
             </p>
