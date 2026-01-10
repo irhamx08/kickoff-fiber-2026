@@ -62,7 +62,7 @@ export default function App() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.4 }}
-          className="min-h-[100svh] w-screen flex items-center justify-center bg-gray-100"
+          className="min-h-[100svh] w-screen flex items-center justify-center bg-white"
         >
           <div className="w-full h-full max-w-md bg-white shadow-lg p-6 text-center flex flex-col justify-center">
             <h2 className="text-xl font-semibold mb-6">Thank You for Your Commitment</h2>
